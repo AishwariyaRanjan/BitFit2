@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".DashboardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/item_styling">
+
+        <TextView
+            android:id="@+id/totalCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:text="@string/total_calories"
+            android:textColor="@color/white"
+
+            android:textSize="30sp"
+            tools:text="Total Calories:" />
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="1000"/>
+
+        <TextView
+            android:id="@+id/averageCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/totalCalories"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/average_calories"
+
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="Average Calories:" />
+        <TextView
+            android:id="@+id/averageValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/totalValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="500"/>
+
+        <TextView
+            android:id="@+id/minCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/averageCalories"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/min_calories"
+
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="Min Calories:" />
+        <TextView
+            android:id="@+id/minValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/averageValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="300"/>
+
+        <TextView
+            android:id="@+id/maxCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/minCalories"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/max_calories"
+
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="Max Calories:" />
+        <TextView
+            android:id="@+id/maxValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/minValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:text="700"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
